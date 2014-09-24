@@ -1,31 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Peeyush" >
+    <meta name="description" content="Homepage of Peeyush Agarwal, CSE, IIT Kanpur">
+    <meta name="author" content="Peeyush Agarwal" >
 
-    <title>Projects - Peeyush Agarwal</title>
+    <title>Peeyush Agarwal - Projects</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/peeyush.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Add custom CSS here -->
-    <link href="css/homepage.css" rel="stylesheet">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+    ga('create', 'UA-42493746-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
   </head>
 
   <body>
-  
-    <div class="brand">Peeyush Agarwal</div>
-    <div class="address-bar">Room No. 334, Hall 3 | IIT Kanpur | India </div>
 
-    <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -34,90 +37,149 @@
           <a class="navbar-brand" href="index.html">Peeyush Agarwal</a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="interest.html">Interest</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="activities.html">Activities</a></li>
-            <li><a href="resume.pdf">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav nav-icon-hover-name">
+            <li><a href="index.html"><i class="fa fa-user fa-fw"></i> <span class="nav-target-name">Home</span></a></li>
+            <li><a href="academics.html"><i class="fa fa-user fa-book"></i> <span class="nav-target-name">Academics</span></a></li>
+            <li><a href="gallery.html"><i class="fa fa-picture-o fa-fw"></i> <span class="nav-target-name">Gallery</span></a></li>
+            <li><a href="projects.html"><i class="fa fa-gears fa-fw"></i> <span class="nav-target-name">Projects</span></a></li>
+            <li><a href="activities.html"><i class="fa fa-slack fa-fw"></i> <span class="nav-target-name">Activities</span></a></li>
+            <li><a href="resume.pdf"><i class="fa fa-list-alt fa-fw"></i> <span class="nav-target-name">Resume</span></a></li>
+            <li><a href="contact.html"><i class="fa fa-comments-o fa-fw"></i> <span class="nav-target-name">Contact</span></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
-    </nav>
+    </div>
 
     <div class="container">
 
       <div class="row">
-        <div class="box">
-          <div class="col-lg-12">
-            <h2 class="intro-text text-center"><strong>Content Aware Mail Classifier</strong></h2>
-            <p>
-					Applied different machine learning algorithms like Naive Bayes, SVM, Random Forest to classify mails of various users[Used Enron dataset] and tested the accuracies of these algorithms. Also made a prototype of Mail Classifier using google app script.
-            </p>
+        <div class="hidden-xs hidden-sm col-md-4 col-lg-3">
+          <div class="sidenav affix" id="sidebar">
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="#log-manager" class="list-group-item"><b>Data Analytics Log Manager</b> <br> <i>Google Summer of Code</i></a></li>
+              <li><a href="#mail-classifier" class="list-group-item"><b>Content Aware Mail Classifier</b> <br> <i>Programming Club, IIT Kanpur</i></a></li>
+              <li><a href="#engagement-platform" class="list-group-item"><b>Customer Engagement Platform</b><br> <i>Entrepreneurial Exploration</i></a></li>
+              <li><a href="#store" class="list-group-item"><b>Online Medical Store</b><br> <i>Entrepreneurial Exploration</i></a></li>
+              <li><a href="#moody-trudes" class="list-group-item"><b>Moody Trudes!</b><br> <i>Yahoo!'s R&D Team</i></a></li>
+              <li><a href="#speech-analyser" class="list-group-item"><b>Speech Analyser</b><br> <i>Open Source Project</i></a></li>
+              <li><a href="" class="list-group-item"><i></i> <br>  <b>Writing about the rest</b></a></li>
+            </ul>
           </div>
-        </div>
-        <div class="box">
-          <div class="col-lg-12">
-            <h2 class="intro-text text-center"><strong>Online Medical Store</strong></h2>
-            <p>
-					Used Ruby on Rails to build an online medical store with fully functional Products Maintainance System, Catalog, Cart and Check Out System. The application was hosted on AWS and heroku.
-            </p>
-          </div>
-        </div>
-        <div class="box">
-        	 <div class="col-lg-12">
-            <h2 class="intro-text text-center"><strong>MoodY! Trudes</strong></h2>
-            <p>
-					Made a web app in Yahoo HackU that:<br>
--Analyses the mood of the person based on his/her updates on social media over a period of time.<br>
--Based on the mood of the person, it suggests music and images.<br>
-We used machine learning to predict the mood of the person[happy, sad, angry, excited]. 
-            </p>
-          </div>
-        </div>
-        <div class="box">
-           <div class="col-lg-12">
-            <h2 class="intro-text text-center"><strong>Speech Analyser</strong></h2>
-            <p>
-          Made an Educational web app to help children master a language faster.<br>
-          It randomly chooses a word from database and displays it in the form of a flash card on the screen. It allows users to record their pronunciation which is assessed using tools like Google Speech2Text API and Chromaprint library for audio fingerprinting. The user can also listen to the correct pronunciation of that word from the database directly from the web app interface.
-            </p>
-          </div>
-        </div>
-        <div class="box">
-        	 <div class="col-lg-12">
-            <h2 class="intro-text text-center"><strong>Study of Economic Growth Rate of India</strong></h2>
-            <p>
+      </div>
+
+      <div class="col-xs-12 col-md-8 col-lg-9">
+        <section class="project" id="log-manager">
+          <h3 class="text-info" style="margin-top: -4px;">Data Analytics Log Manager</h3>
+          <p>
+            Made an application which aims to make complex analytics easy for not only programmers but also other users such as researchers, managers, designers etc. who may not have prior exposure to programming.<br>
+            It provides
+            <ul>
+              <li>An API for receiving log data from multiple applications and storing them in a database</li>
+              <li>Tools to analyze this data</li>
+            </ul>
+            The application provides a lot of flexibility on the type of log data. A single log entry can contain multiple arbitrary key value pairs.<br>
+            The analytics component is powerful as well as easy to use. It supports
+            <ul>
+              <li>Filtering of data using arbitrary key-values pairs</li>
+              <li>Creating a parent-child relationship (Eg. grouping the data by username and visualizing logs for various usernames as child tables)</li>
+              <li>Adding synthetic/computed data (Eg. the number of times a user performed some action)</li>
+            </ul>
+            The application supports authentication and authorization to help protect the data. Admin user can
+            <ul>
+              <li>Create/delete admin users</li>
+              <li>Assign applications to users such that a user can do analytics only on assigned applications</li>
+            Code Repository : github.com/apeeyush/Data-Analytics-Log-Manager<br>
+            Documentation  : github.com/apeeyush/Data-Analytics-Log-Manager/wiki
+          </p>
+        </section>
+        <hr>
+        <section class="project" id="mail-classifier">
+          <h3 class="text-info" style="margin-top: -4px;">Content Aware Mail Classifier</h3>
+          <p>
+            Created a mail classifier based on bag of words model using publicly available Enron mail database
+            <ul>
+              <li>Studied and implemented various supervised learning algorithms like Multiclass-SVM, Naive Bayes and Random forests</li>
+              <li>Also used basic Natural Language Processing techniques like POS-tagging and stemming</li>
+            </ul>
+            Built the main testing and classification module using python, python-nltk, scikit-learn and weka<br>
+            Also built a prototype for Gmail using Google App script
+          </p>
+        </section>
+        <hr>
+        <section class="project" id="engagement-platform">
+          <h3 class="text-info" style="margin-top: -4px;">Customer Engagement Platform for Retailers</h3>
+          <p>
+            Used Ruby on Rails to build a platform for retailers which consists of
+            <ul>
+              <li>A web app (optimized for tablets) to collect customer feedback and contact details</li>
+              <li>Functionality to send Thank You SMS and Email to customers</li>
+              <li>Different access levels from store staff to store owner</li>
+              <li>Analytics of data collected from customers</li>
+          </p>
+        </section>
+        <hr>
+        <section class="project" id="store">
+          <h3 class="text-info" style="margin-top: -4px;">Online Medical Store</h3>
+          <p>
+    				Used Ruby on Rails to build an online medical store with fully functional Products Maintainance System, Catalog, Cart and Check Out System.<br>
+            The application was hosted on AWS and heroku.
+          </p>
+        </section>
+        <hr>
+        <section class="project" id="moody-trudes">
+          <h3 class="text-info" style="margin-top: -4px;">MoodY! Trudes</h3>
+          <p>Made a web app in Yahoo HackU that:</p>
+            <ul>
+              <li>Analyses the mood of the person based on his/her updates on social media over a period of time</li>
+              <li>Based on the mood of the person, it suggests music and images</li>
+            </ul>
+          <p>We used machine learning to predict the mood of the person[happy, sad, angry, excited].</p>
+        </section>
+        <hr>
+        <section class="project" id="speech-analyser">
+          <h3 class="text-info" style="margin-top: -4px;">Speech Analyser</h3>
+          <p>
+            Made an Educational web app to help children master a language faster.<br>
+            It randomly chooses a word from database and displays it in the form of a flash card on the screen. It allows users to record their pronunciation which is assessed using tools like Google Speech2Text API and Chromaprint library for audio fingerprinting. The user can also listen to the correct pronunciation of that word from the database directly from the web app interface.
+          </p>
+        </section>
+        <hr>
+        <section class="project" id="economic-growth">
+          <h3 class="text-info" style="margin-top: -4px;">Study of Economic Growth Rate of India</h3>
+          <p>
             Studied basics of Microeconomics and Macroeconomics and did an analysis of economic growth rate, reasons for it's decrease in past few fiscal years and steps taken by the government to increase it.
-            </p>
-          </div>
-        </div>
-        <div class="box">
-        	 <div class="col-lg-12">
-            <h2 class="intro-text text-center"><strong> Electromania, Takneek</strong></h2>
-            <p>
-             Designed and built a frogger game. In this game, the frog had to cross 4 roads and reach the other side which would increase the score on display by 1. However, the game will get reset if the frog collided with a car. There were buttons for moving the frog up and down and to reset the game. Player could also vary the speed of the cars . For this we used various ICs like 555 , 4029 , 7447 , 4Mux , 8Mux and various logic gates etc.
-            </p>
-          </div>
-        </div>
+          </p>
+        </section>
+        <hr>
+        <section class="project" id="electromania">
+          <h3 class="text-info" style="margin-top: -4px;">Electromania, Takneek</h3>
+          <p>
+            Designed and built a frogger game. In this game, the frog had to cross 4 roads and reach the other side which would increase the score on display by 1. However, the game will get reset if the frog collided with a car. There were buttons for moving the frog up and down and to reset the game. Player could also vary the speed of the cars . For this we used various ICs like 555 , 4029 , 7447 , 4Mux , 8Mux and various logic gates etc.
+          </p>
+        </section>
+        <hr>
       </div>
 
     </div><!-- /.container -->
 
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script>
-	  // Activates the Carousel
-	  $('.carousel').carousel({
-		interval: 5000
-	  })
-	</script>
+      if($(location.href.split("#")[1])) {
+        var target = $('#'+location.href.split("#")[1]);
+        if (target.length) {
+          $('body').animate({
+            scrollTop: target.offset().top - 70
+          }, 400);
+        }
+      }
+
+      $('#sidebar ul li a').click(function(){
+        $('body').animate({
+          scrollTop: $($( this ).attr('href') + ' > h3').offset().top - 70
+        }, 400);
+      });
+    </script>
   </body>
 </html>

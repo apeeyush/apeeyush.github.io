@@ -1,31 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Peeyush" >
+    <meta name="description" content="Homepage of Peeyush Agarwal, CSE, IIT Kanpur">
+    <meta name="author" content="Peeyush Agarwal" >
 
-    <title>Hans Rosling</title>
+    <title>Peeyush Agarwal - Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/peeyush.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Add custom CSS here -->
-    <link href="css/homepage.css" rel="stylesheet">
-
-    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
   </head>
 
   <body>
-  
-    <div class="brand">Peeyush Agarwal</div>
-    <div class="address-bar">Room No. 334, Hall 3 | IIT Kanpur | India </div>
 
-    <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -34,20 +27,19 @@
           <a class="navbar-brand" href="index.html">Peeyush Agarwal</a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="interest.html">Interest</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="activities.html">Activities</a></li>
-            <li><a href="resume.pdf">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <div class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav nav-icon-hover-name">
+            <li><a href="index.html"><i class="fa fa-user fa-fw"></i> <span class="nav-target-name">Home</span></a></li>
+            <li><a href="academics.html"><i class="fa fa-user fa-book"></i> <span class="nav-target-name">Academics</span></a></li>
+            <li><a href="gallery.html"><i class="fa fa-picture-o fa-fw"></i> <span class="nav-target-name">Gallery</span></a></li>
+            <li><a href="projects.html"><i class="fa fa-gears fa-fw"></i> <span class="nav-target-name">Projects</span></a></li>
+            <li><a href="activities.html"><i class="fa fa-slack fa-fw"></i> <span class="nav-target-name">Activities</span></a></li>
+            <li><a href="resume.pdf"><i class="fa fa-list-alt fa-fw"></i> <span class="nav-target-name">Resume</span></a></li>
+            <li><a href="contact.html"><i class="fa fa-comments-o fa-fw"></i> <span class="nav-target-name">Contact</span></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
-    </nav>
+    </div>
 
     <div class="container">
 
@@ -67,16 +59,8 @@
 
     </div><!-- /.container -->
 
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script>
-	  // Activates the Carousel
-	  $('.carousel').carousel({
-		interval: 5000
-	  })
-	</script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>
